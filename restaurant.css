@@ -1,0 +1,958 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Georgia, serif;
+}
+.headerbar{
+    display: none;
+}
+/* .searchicon{
+    display: block;
+} */
+.logo img{
+    width: 7vw;
+}
+.header{
+display: flex;
+justify-content: space-between;
+/* padding: 5px 5px 5px 17px; */
+ padding: 0.3rem 3rem 0.3rem 3rem ;
+background-color: rgba(233, 222, 10, 0.93);
+align-items: center;
+border-bottom: 3px solid rgb(232, 85, 85);
+font-size: 1.3rem;
+box-shadow: 0px 0px 16px 0px rgb(232, 85, 85); 
+/* trbl */
+}
+.logo{
+      display: flex;
+  align-items: center;
+
+}
+.logo span{
+    margin-left: 10px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgb(2, 70, 2);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.bar{
+    display: none;
+}
+.nav li{
+    color: rgb(238, 101, 101);
+    font-weight: bold;
+}
+.nav li:hover{
+    color: rgb(2, 70, 2);
+    font-size: 22px;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+}
+.nav ul a{
+   padding: 1rem;
+    text-decoration: none;
+}
+
+.home ul{
+    display: flex;
+align-items: center;
+
+}
+.home ul li{
+    padding: 10px;
+}
+.home i{
+    color:  rgb(2, 70, 2);
+}
+.search{
+    display: none;
+}
+.search input{
+    outline: none;
+    border: none;
+    padding: 14px;
+    width: 19vw;
+    border-radius: 0.7rem;
+    font-size: 0.9rem ;
+    color: black;
+    
+}
+.search input::placeholder{
+    color: black;
+    font-weight: bold;
+   
+}
+.search i{
+    background-color: rgb(232, 85, 85);
+    color: white;
+    padding: 10px;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    margin-left: 5px;
+}
+/* --------main-------- */
+.main{
+    background-color: rgb(255, 249, 181);
+    padding: 1.5rem;
+
+}
+.main .mainSlide {
+   display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
+.mainSlide div:nth-child(2){
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.mainSlide div:nth-child(1){
+    flex: 1;
+    padding-top: 40px;
+   
+}
+.mainSlide div:nth-child(1) h1{
+    
+     color: rgb(2, 70, 2);
+}
+.mainSlide div:nth-child(1) span{
+   color: rgb(238, 101, 101);
+   text-decoration:underline;
+}
+.mainSlide div:nth-child(1) i{
+    font-size: 1.5rem;
+}
+.mainSlide div:nth-child(1) p{
+   padding: 1.5rem 1rem 1.5rem 1rem;
+   line-height: 19px;
+font-family: Papyrus, fantasy;
+font-weight: bold;
+font-size: 1.1rem;
+
+}
+.mainSlide div:nth-child(1) button{
+    background-color:black ;
+    color: wheat;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+   display: flex;
+   align-items: center;
+   border: none;
+   outline: none;
+   margin-left: 10px;
+}
+.mainSlide div:nth-child(1) button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: all 0.5s;
+}
+.mainSlide div:nth-child(1) button i{
+     margin-left: 10px;
+      font-size: 1.2rem;
+}
+.mainSlide div:nth-child(1) button i:hover{
+    color: red;
+   font-size: 1.7rem;
+}
+
+.main img{
+    width: 50vw;
+    height: 55vh;
+    transition: transform 0.3s ease-in-out;
+}
+.main img:hover{
+    transform: scale(1.05);
+}
+
+/* for foodItem */
+.foodItem{
+    background-color: rgb(238, 101, 101);
+    display: flex;
+    padding: 1.4rem;
+    margin:3rem 2rem 3rem 2rem ;
+    border-radius:10px ;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.items{
+    width: 250px;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+.items h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+   color: rgb(2, 70, 2);
+}
+.items p{
+    color: wheat;
+    font-size: 0.7rem;
+    margin-bottom: 15px;
+}
+.items button{
+    margin-top: 10px;
+    padding: 1.2rem;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease-in-out;
+}
+.items button:hover{
+    background-color: white;
+    color: #000;
+    transform: scale(1.05);
+}
+.items img{
+    width: 12vw;
+    height: 17vh;
+}
+/* mainSlide2 starts form here */
+.mainSlide2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    /* margin: 80px 0; */
+}
+.fooding{
+    flex: 0.5;
+    /* box1 takes double the space of box2 because 1 > 0.5 */
+}
+.fooding img{
+    /* max-width:550px;   */
+    max-width:500px;
+    width: 45vw;
+    height: 70vh;
+}
+.question{
+    flex: 0.5;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+.question h2{
+    color: rgb(238, 101, 101);
+    font-size: 1.7rem;
+}
+.q-ans{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: aliceblue; */
+    margin-right: 20px;
+}
+
+.q-ans img{
+    width: 60px;
+    height: 65px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+}
+.q-ans h4{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1rem;
+}
+.q-ans p{
+    margin-left: 1rem;
+    margin-top: 0.45rem;
+    font-size: 14px;
+    
+}
+/* mainSlide3 starts from here.... */
+.mainSlide3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+      z-index: 1;
+      width: 100%;
+    /* z-index only works if the element has position set,It controls which element appears on top when they overlap.box2 will appear on top of box1 because 2 > 1 */
+}
+.mainSlide3 .fav-card{
+    width: 450px;
+    text-align: center;
+    margin-bottom: 1.7rem;
+}
+.fav-card h1{
+   color: rgb(14, 56, 14);
+   margin-bottom: 10px;
+   background-color:  rgb(242, 109, 109);
+   padding: 0.75rem;
+   font-size: 1.5rem;
+   border-radius: 0.7rem;
+}
+.fav-card h1:hover{
+    color:  rgb(242, 109, 109);
+    background-color: rgb(14, 56, 14);
+}
+.fav-card p{
+   color: black;
+   font-weight: 500;
+}
+
+.mainSlide3 .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    /* padding: 1rem; */
+    margin: 30px 0;
+     
+}
+.mainSlide3 .cards .card{
+   background-color:white;
+   padding: 1rem;
+   border-radius: 10px;
+   box-shadow: 2px black;
+   /* margin-bottom: 30px; */
+   width: 220px;
+text-align: center;
+align-items: center;
+justify-items: center;
+}
+.mainSlide3 .cards .card div{
+    height: 150px;
+    margin-bottom: 20px;
+   
+}
+
+.mainSlide3 .cards .card div img{
+    width: 13vw;
+    height: 25vh;
+    align-items: center;
+    display: flex;
+}
+.mainSlide3 .cards p{
+    /* width: 200px; */
+    /* margin-left: 20px; */
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+.mainSlide3 .cards h3{
+   color: rgb(2, 70, 2);
+    text-align: center;
+    font-size: 1.5rem;
+}
+.mainSlide3 .cards .price{
+   color: rgb(254, 56, 56);
+    font-weight: bold;
+    font-size: 1.3rem;
+    /* width: 4rem;
+    height: 2rem;
+    background-color: black;
+    border-radius: 10px; */
+    text-decoration:underline;
+    
+}
+.graph{
+    width: 100%;
+    background-color:rgb(252, 124, 124);
+    z-index: -1;
+    height: 50%;
+    bottom: 0;
+    position: absolute;
+    border-radius: 10px;
+}
+/* mainSlide4 starts from here... */
+.mainSlide4{
+    display: flex;
+    flex-wrap: wrap-reverse;
+  margin-top: 130px;
+}
+
+.mainSlide4 .heading{
+    flex: 0.5;
+}
+.mainSlide4 h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.mainSlide4 p{
+    margin-top: 1rem;
+    font-size: 1rem;
+   margin-left: 10px;
+   
+}
+.tag1 {
+    display: flex;
+    margin:2rem 0 1rem 0.5rem;
+}
+.tag1 div:nth-child(2){
+    text-align: center;
+   margin-top: 10px;
+  }
+  .tag1 div h3{
+     color: rgb(2, 70, 2);
+  }
+.tag1 div p{
+margin-top: 0;
+ font-size: 1rem;
+ color: rgb(238, 101, 101);
+}
+.tag2{
+    display: flex;
+    padding: 25px 20px;
+    align-items: center;
+    background-color: rgb(238, 101, 101);
+    /* margin-top: 40px; */
+    width: 100%;
+    
+}
+.tag2 div{
+    display: flex;
+    flex: 0.5;
+   /* overflow: hidden; */
+    /* It is property that hides anything that goes outside the size (width or height)  */
+    height: 27px;
+
+   
+}
+.tag2 div i,.tag2 div h4{
+    display: flex;
+    font-size: 2rem;
+}
+.tag2 div i{
+    font-size: 2rem;
+    color: rgb(2, 70, 2);
+}
+.tag2 div h4{
+    margin-left: 10px;
+    margin-top: -4px;
+}
+.tag2 div p{
+    font-size: 0.6rem;
+    margin-top: 5px;
+    width: 10vw;
+    color: black;
+}
+.tag1 div img{
+width: 6vw;
+height: 10vh;
+
+}
+.mainSlide4 .chef{
+    flex: 0.5;
+    text-align: right;
+}
+
+.mainSlide4 .chef img{
+   width: 50vw;
+   max-width: 450px;
+   margin-top: -50px;
+   height: 70vh;
+} 
+/* Message part starts from here.... */
+.message{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-direction: row-reverse;
+    padding: 1rem;
+}
+.messageName h2{
+    font-size: 2rem;
+}
+.messageName h2 span{
+    font-size: 2.5rem;
+}
+.messageSearch{
+    display: flex;
+}
+.messageInput input{
+    padding: 1.3rem;
+    width:30vw;
+    outline: none;
+    border: none;
+    border-bottom-left-radius: 10px;
+}
+.messageInput input::placeholder{
+    color:rgb(143, 112, 112);
+    font-size: 0.9rem;
+}
+.messageSearch button{
+    width: 10vw;
+    outline: none;
+    border: none;
+    background-color: rgb(2, 70, 2);
+    border-top-right-radius: 10px;
+    color: white;
+    font-size: 1rem;
+
+} 
+/* Footer starts from here.... */
+.footer{
+    background-color: rgb(218, 135, 135) ;
+    color: white;
+}
+.mainFooter{
+    padding: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.row1 .name h2{
+   color: rgb(2, 70, 2);
+   font-size: 1.7rem;
+}
+.row1 .name p{
+    padding: 1rem 0 1rem 0;
+    width: 17vw;
+    font-size: 0.7rem;
+}
+.row1 .icons ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row1 .icons ul li{
+    background-color:rgb(195, 51, 51);
+    padding: 0.7rem;
+    border-radius: 50%;
+}
+.row2{
+    margin-left: 4rem;
+}
+.menuList h3{
+    font-size: 1.2rem;
+}
+.row2 .menuList ul{
+    margin-top: 10px;
+}
+.row2 .menuList ul li{
+    line-height: 24px;
+    font-size: 0.8rem;
+}
+.row3{
+    margin-left: 4rem;
+}
+.row3 i{
+    background-color:rgb(195, 51, 51);
+    padding: 0.7rem;
+    border-radius: 50%;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.contact-item span{
+    margin-left: 1rem;
+    text-align: center;
+}
+
+.row4 .download div{
+    display: flex;
+     margin-top: 10px;
+} 
+.row4 .download div i{
+    background-color:rgb(195, 51, 51);
+    padding: 0.7rem;
+    border-radius: 50%;
+}
+.row4 .download div p{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+/* responsive for tablet */
+@media only screen and (max-width: 768px){
+    .header .nav,.header .home{
+        display: none;
+    }
+    
+    .search{
+        width:60vw ;
+    }
+    .bar{
+        display:block;
+        cursor: pointer;
+    }
+    .headerbar{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(233, 233, 122);
+        transition: all 0.5s;
+    }
+    .headerbar .home,.headerbar .nav{
+        display: block;
+        font-size: 18px;
+    }
+    .bar .fa-xmark{
+        display:none;
+        position: absolute;
+        right: 5vw;
+        top: 20px;
+        font-size: 25px;
+    }
+    
+    .headerbar .nav{
+     /* padding: 2rem;   */
+     line-height: 30px;
+    }
+    .headerbar .nav ul{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+    }
+     .headerbar .nav li{
+        color: black;
+        padding: 17px 0px 17px 0px;
+        width:96vw ;
+         background-color: rgb(238, 101, 101);
+         font-size: 1.3rem;
+         font-weight: bold;
+         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+     }
+     .headerbar .nav li:hover{
+        background-color:rgb(57, 169, 57);
+     
+     }
+     .headerbar .nav a{
+       text-decoration: none;
+     
+     }
+     
+     .headerbar .home ul{
+      margin: 60px 10px 0px 0px;
+    
+
+}
+.header .home i{
+    color: white;
+  
+    margin-left: 70px;
+}
+     .headerbar .home ul li{
+          width:36vw ;
+        padding: 1rem;  
+        background-color: black;
+        justify-items: center;
+     
+     }
+     .foodItem{
+        padding: 0.2rem;
+     }
+     .items{
+        padding:0.5rem 0rem 0.7rem 0rem;
+      
+     }
+     .question h2{
+        font-size: 1.25rem;
+     }
+     .question h4{
+        font-size: 0.8rem;
+     }
+     .question p{
+        font-size: 0.65rem;
+     }
+     .question img{
+        width: 7vw;
+        height: 8vh;
+     }
+     .fooding img{
+        max-width: 300px;
+        width: 250px;
+        height: 190px;
+     }
+     .mainSlide3{
+        margin-top: 2rem;
+     }
+    .mainSlide3 .cards .card{
+        margin-top: 10px;
+    }
+    .mainSlide3 .cards .card div img{
+        width: 15vw;
+        height: 19vh;
+        margin-top: 10px;
+    }
+    .mainSlide3 .cards .card div{
+    height: 112px;
+    margin-bottom: 20px;
+   }
+   .graph{
+    background-color: none;
+    width: 0;
+    height: 0;
+   }
+   .mainSlide4 .heading{
+    flex: 1;
+   }
+    .mainSlide4 .heading h1{
+        margin-top: 1.4rem;
+    }
+    .mainSlide4 .heading p{
+        font-size: 0.98rem;
+        padding: 0 1.3rem 0 1.7rem;
+        color: black;
+    }
+    .tag1 div:nth-child(1){
+        margin-left: 1.4rem;
+    }
+    .tag1 div:nth-child(1) img{
+        width: 10vw;
+    }
+    .tag1 div:nth-child(2){
+    margin-left: -20px;
+    }
+    .mainSlide4 .tag2 div p{
+        width: 30vw;
+        font-size: 0.8rem;
+        margin-left: -10px;
+    }
+    .mainSlide4 .tag2 div i{
+        font-size: 2.3rem;
+    }
+   .mainSlide4 .chef{
+    flex: 1;
+    text-align: center;
+    margin-top: -20px;
+   }
+   .mainSlide4 .chef img{
+    width: 70vw;
+    height: 75vh;
+   }
+   .message{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-direction: row-reverse;
+    /* padding: 1rem; */
+}
+.messageName h2{
+    font-size: 1.5rem;
+}
+.messageName h2 span{
+    font-size: 2rem;
+}
+.messageSearch{
+    display: flex;
+}
+.messageInput input{
+    padding: 0.9rem;
+    width:25vw;
+    outline: none;
+    border: none;
+    border-bottom-left-radius: 10px;
+}
+.messageInput input::placeholder{
+    color:rgb(143, 112, 112);
+    font-size: 0.78rem;
+}
+.messageSearch button{
+    width: 7vw;
+    outline: none;
+    border: none;
+    background-color: rgb(2, 70, 2);
+    border-top-right-radius: 10px;
+    color: white;
+    font-size: 0.8rem;
+    
+    
+
+} 
+.mainFooter{
+    padding: 1rem;
+    font-size: 0.6rem;
+}
+.mainFooter i{
+    font-size: 0.7rem;
+}
+.row2 .menuList h3{
+    font-size: 0.8rem;
+}
+.row2 .menuList ul li{
+line-height: 17px;
+}
+}
+
+/* responsive for mobile phone */
+@media only screen and (max-width: 550px){
+  .mainSlide div:nth-child(1){
+    font-size: 18px;
+   
+}
+.mainSlide div:nth-child(1) p{
+    padding-top: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.mainSlide div:nth-child(1) button{
+    font-size: 17px;
+}
+.mainSlide div:nth-child(1) button:hover{
+    padding: 15px;
+    background-color: rgba(0, 85, 0, 0.917);
+    color: white;
+    border: none;
+    outline: none;
+    transition: all 0.5s;
+}
+.mainSlide div:nth-child(2) img{
+    width: 50vw;
+    height: 30vh;
+   
+} 
+.items div img{
+    width: 20vw;
+    height: 15vh;
+}
+.items button{
+    padding: 10px;
+    font-size: 13px;
+}
+.fooding img{
+        max-width: 300px;
+        width: 140px;
+        height: 190px;
+     }
+     .question h2{
+    color: rgb(238, 101, 101);
+    font-size: 1.25rem;
+}
+.q-ans h4{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1rem;
+    
+}
+.q-ans p{
+    margin-left: 1rem;
+    margin-top: 0.45rem;
+    font-size: 8px;
+    }
+    .mainSlide3 .fav-card{
+        width: 350px;
+    text-align: center;
+    margin-top: 1.6rem;
+    }
+    .mainSlide3 .fav-card h1{
+        font-size: 1.15rem;
+    }
+    .mainSlide3 .fav-card p{
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+    .mainSlide3 .cards .card {
+        margin-top: -1.5rem;
+        margin-bottom: 2rem;
+        width: 160px;
+
+    }
+    .mainSlide3 .cards .card div img{
+        width: 15vw;
+        height: 17vh;
+    }
+    .mainSlide3 .cards .card div{
+    height: 75px;
+    margin-bottom: 20px;
+   }
+   .graph{
+    background-color: none;
+    width: 0;
+    height: 0;
+   
+   }
+   /* .mainSlide4 .heading{
+    flex: 1;
+   } */
+    .mainSlide4 .heading h1{
+        margin-top: 1.4rem;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .mainSlide4 .heading p{
+        font-size: 0.75rem;
+        text-align: center;
+        color: black;
+    }
+    
+    .tag1 div:nth-child(1) img{
+        width: 10vw;
+          margin-left: -5px;
+          height: 10vh;
+    }
+    .mainSlide4 .tag2 div p{
+        width:30vw;
+        font-size: 0.5rem;
+        margin-left: -25px;
+        
+    }
+    .mainSlide4 .tag2 div i{
+        font-size:1.5rem;
+    }
+    .mainSlide4 .tag2 div h4{
+        font-size: 1rem;
+        margin-top: 4px;
+    }
+   .mainSlide4 .chef{
+    text-align: center;
+    margin-top: -60px;
+   }
+   .mainSlide4 .chef img{
+    width: 40vw;
+    height: 40vh;
+   }
+   .message{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 0;
+}
+.messageName h2{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.messageName h2 span{
+    font-size: 1.55rem;
+}
+.messageSearch{
+    display: flex;
+}
+.messageInput input{
+    padding: 1rem;
+    width:50vw;
+    outline: none;
+    border: none;
+    border-bottom-left-radius: 10px;
+}
+.messageInput input::placeholder{
+    color:rgb(143, 112, 112);
+    font-size: 0.9rem;
+}
+.messageSearch button{
+    width: 15vw;
+    outline: none;
+    border: none;
+    background-color: rgb(2, 70, 2);
+    border-top-right-radius: 10px;
+    color: white;
+    font-size: 0.87rem;
+} 
+
+}
+
+
+
